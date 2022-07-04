@@ -29,8 +29,7 @@ export class AuthComponent implements OnInit, OnDestroy {
     private router: Router
   ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ngOnDestroy(): void {
     this.alive$.next();
