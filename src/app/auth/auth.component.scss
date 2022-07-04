@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  height: 100vh;
+  background: url(../../assets/auth-background.svg);
+
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.auth-card {
+  width: 4  00px;
+  margin: auto;
+
+  mat-card-title {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  mat-card-content {
+    margin: 40px 0;
+  }
+}
+
+.auth-form {
+  &__field {
+    margin-bottom: 10px;
+  }
+
+  &__actions {
+    display: flex;
+    margin-top: 40px;
+
+    .auth-button {
+      margin-left: auto;
+      text-transform: uppercase;
+      width: 150px;
+    }
+  }
+}

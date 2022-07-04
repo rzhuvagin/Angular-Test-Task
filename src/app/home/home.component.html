@@ -1,1 +1,18 @@
-<p>home works!</p>
+<mat-toolbar color="primary">
+  <span>Angular Test App</span>
+  <button mat-icon-button class="logout-icon" aria-label="Logout" (click)="logout()">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="content-wrapper">
+  <div class="content">
+    <h1>You are welcome!</h1>
+    <p>
+      Some welcome text
+    </p>
+    <button mat-flat-button color="primary" (click)="logout()" class="logout-button">
+      Logout
+    </button>
+  </div>
+</div>
