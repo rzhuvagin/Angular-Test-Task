@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { BehaviorSubject, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -15,9 +15,9 @@ import { AuthService } from '../services/auth.service';
 })
 export class AuthComponent implements OnInit, OnDestroy {
 
-  public formGroup = new FormGroup({
-    login: new FormControl(null, Validators.required),
-    password: new FormControl(null, Validators.required),
+  public formGroup = new UntypedFormGroup({
+    login: new UntypedFormControl(null, Validators.required),
+    password: new UntypedFormControl(null, Validators.required),
   });
 
   public loading$ = new BehaviorSubject<boolean>(false);
