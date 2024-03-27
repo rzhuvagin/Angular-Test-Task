@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { BehaviorSubject, Observable, of, throwError, timer } from 'rxjs';
+import { BehaviorSubject, Observable, timer } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { IAuthQuery } from '../models/auth.model';
 
